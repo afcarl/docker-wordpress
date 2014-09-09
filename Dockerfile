@@ -1,6 +1,6 @@
 FROM tutum/lamp:latest
 MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
-
+# apt-get install -y libapache2-mod-rpaf libapache2-mod-memcached libapache2-mod-headers php5-dev php5-memcache memcached php-pear build-essential php5-tidy php5-curl apache2-dev php-apc mod_expires
 # Download latest version of Wordpress into /app
 RUN rm -fr /app && git clone --depth=1 https://github.com/WordPress/WordPress.git /app
 
